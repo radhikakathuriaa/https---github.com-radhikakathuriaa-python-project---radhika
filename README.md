@@ -11,7 +11,10 @@ This project has two parts:
 ## Features
 - Scrape movies from IMDb (Title, Year, Genre, Rating).  
 - Export dataset to `genre_movies_selenium.xlsx`.  
-- Ask the user for a genre and suggest a random movie.  
+- Ask the user for a genre and suggest a random movie.
+- - Predefined supported genres:
+  ```python
+  GENRES = ['action', 'comedy', 'drama', 'romance', 'horror']
 - Lightweight and extendable.  
 
 ---
@@ -77,13 +80,16 @@ Example:
 ```
 
 ---
+**
+Example Dataset (Excel)**
 
-## Example Dataset (Excel)
 | Genre   | Title                    | Year | Rating |
-|---------|--------------------------|------|--------|
+| ------- | ------------------------ | ---- | ------ |
 | action  | Mad Max: Fury Road       | 2015 | 8.1    |
 | comedy  | The Mask                 | 1994 | 6.9    |
 | drama   | The Shawshank Redemption | 1994 | 9.3    |
+| romance | Titanic                  | 1997 | 7.8    |
+| horror  | The Conjuring            | 2013 | 7.5    |
 
 ---
 
